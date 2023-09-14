@@ -25,13 +25,13 @@ class ProductTemplate(models.Model):
     fiscal_type = fields.Selection(
         selection=PRODUCT_FISCAL_TYPE,
         string="Fiscal Type",
-        company_dependent=True,
+        company_dependent=False,
     )
 
     icms_origin = fields.Selection(
         selection=ICMS_ORIGIN,
         string="ICMS Origin",
-        company_dependent=True,
+        company_dependent=False,
         default=ICMS_ORIGIN_DEFAULT,
     )
 
